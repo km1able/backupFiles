@@ -1,0 +1,7 @@
+Configuring enclosed-exceptions-1.0.3...
+Preprocessing library for enclosed-exceptions-1.0.3..
+Building library for enclosed-exceptions-1.0.3..
+[1 of 1] Compiling Control.Exception.Enclosed ( src/Control/Exception/Enclosed.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Control/Exception/Enclosed.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /home/kelly/.stack/snapshots/x86_64-linux/lts-12.13/8.4.3/lib/x86_64-linux-ghc-8.4.3/enclosed-exceptions-1.0.3-83ZuG1a5uaiInyZOB7fHWd
+Registering library for enclosed-exceptions-1.0.3..

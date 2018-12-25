@@ -1,0 +1,96 @@
+##For Programming CPP Practices
+
+- Inheritance/ Constructors
+    -Diamond Problem: 
+
+            Super
+        Inherit   Inherit
+            Inherit from both Inherits --> can cause problems; make Super Classes Virtual 
+
+    -Constructors are called AUTOMATICALLY if no input arg is needed. If require input: 
+
+    class SuperClass { 
+        public: 
+            SuperClass () {}
+            SuperClas (int foo) {}
+    }; 
+
+    class SubClass : public SuperClass {
+        public: 
+            SubClass () {} //SuperClass constructor is created at SubClass init. 
+            SubClass (int foo, int bar) : SuperClass (foo) {//bar constructor (for SubClass)}
+            SubClass (int foo) : SuperClass (foo) {//constructor for subclass} //if SubClass doesn't need any input
+
+
+    
+    Initialization of Classes with input args: 
+    Class Qux { 
+        public: 
+            Qux() : _foo("Initialize foo to this string...avoids creating string") {} 
+            //almost equivalent to : 
+                Qux () {  _foo = "initialize to this...creates temp string"; } 
+        private: 
+            std::string _foo; 
+    }
+
+    Multiple inputs: 
+
+    Class Baz {
+        public: 
+            Baz() : _foo ("initialize foo first" ), _bar ("then bar" ) {}
+        private: 
+            std::string _foo; 
+            std::string _bar; 
+    }
+
+    If input is same name: 
+    
+    Class Baz {
+        public: 
+            Baz (std::string foo) : foo ( foo) {}
+        private: 
+            std::string foo; 
+    }
+        --> roughly equivalent to using 'this->foo = foo' in constructor
+    
+    Template Types: 
+    template <class T> 
+    class My_Template{
+        public: 
+            //works as long as T has copy constructor 
+            My_Template (T bar) : _bar (bar) {}
+            private: 
+            T _bar; 
+    }
+
+    If using const values, must use initialization lists 
+    class Const_Field {
+        public: 
+            Const_Field () : _constant (1) {} 
+            //this is an error: Const_Field () { _constant = 1;} 
+        private: 
+            const int _constant; 
+    }
+
+    Exceptions: 
+    class Foo {
+        Foo() try: _str("text of string") {}
+        catch ( ...) {
+            //exception is rethrown as if we'd written "throw;" here
+        }
+    }
+
+
+
+    What are Interfaces? 
+    -> Interfaces are noninstantiable types that contain only function declaration.s 
+    -> A variabe with an interface tpe acts as a reference to any object that implements
+        that particular interface. 
+
+    -> Potential problems: 
+        -Multiple inheritance of Abstract Base Classes can lead to vtable pointer bloat
+            -occurs in most implementations of C++
+        -Each time a class has in its inheritance hierarchy a different brach with a virtual function
+        , another vtable pointer is added to the class 
+    -Usually not a problem (inheritance suggests is-a), interfaces suggest (behaves like or looks like)
+    

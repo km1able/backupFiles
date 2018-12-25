@@ -1,0 +1,6 @@
+##define Interfaces and capabilities; Rough layout of structures
+
+
+Interactable : (Physics objects? Messages/Events?)) 
+Networkable  : Can Interact as a Network (i.e. SwarmActor, SensorArray)
+Drawable     : Is object capable of being rendered? (Input: VertexBuffers, )

@@ -1,0 +1,11 @@
+//for general info about learning modules 
+(possible listings) 
+
+--> ObjectManagers used for creating : Sensor Networks 
+                                       Actor Networks   
+                                       PhysicalObjects
+
+
+Create Basic Modules 
+    i.e. Math Node
+         Intro Electricity Node (Resistors, Capacitors, Etc.)

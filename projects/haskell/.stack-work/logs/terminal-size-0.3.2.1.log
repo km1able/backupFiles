@@ -1,0 +1,14 @@
+Configuring terminal-size-0.3.2.1...
+Preprocessing library for terminal-size-0.3.2.1..
+Posix.hsc:24:0: warning: "hsc_alignment" redefined
+In file included from .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/System/Console/Terminal/Posix_hsc_make.c:1:0:
+/home/kelly/.stack/programs/x86_64-linux/ghc-8.4.3/lib/ghc-8.4.3/template-hsc.h:91:0: note: this is the location of the previous definition
+ #define hsc_alignment(x...)                                           \
+ 
+Building library for terminal-size-0.3.2.1..
+[1 of 3] Compiling System.Console.Terminal.Common ( src/System/Console/Terminal/Common.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/System/Console/Terminal/Common.o )
+[2 of 3] Compiling System.Console.Terminal.Posix ( .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/System/Console/Terminal/Posix.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/System/Console/Terminal/Posix.o )
+[3 of 3] Compiling System.Console.Terminal.Size ( src/System/Console/Terminal/Size.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/System/Console/Terminal/Size.o )
+ignoring (possibly broken) abi-depends field for packages
+Installing library in /home/kelly/.stack/snapshots/x86_64-linux/lts-12.13/8.4.3/lib/x86_64-linux-ghc-8.4.3/terminal-size-0.3.2.1-KN6K6Ef1GMWIEqS2qb6D5y
+Registering library for terminal-size-0.3.2.1..

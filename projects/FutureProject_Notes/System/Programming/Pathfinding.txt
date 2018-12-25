@@ -1,0 +1,6 @@
+How are structures defined? 
+How are they defined within the story? 
+How can it be determined from a Character perspective? 
+
+Graph structures / A* algorithm given input sets? 
+--> given input range (i.e. distance (say height) greater than Y = NULL, + weighted return )

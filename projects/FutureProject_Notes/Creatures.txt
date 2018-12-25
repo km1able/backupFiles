@@ -1,0 +1,37 @@
+
+
+Emulatable: 
+
+Portugese Man-O-War Jellyfish ( long tentacles/stinging for sucking fish and eating) 
+    -Sails 
+    -Bright and poisonous
+
+Sea Crabs in General 
+
+Squids
+
+Sea Cucumbers (Static creature, tentacle arms for swalling food such as StarFish Eggs) 
+
+Sea Urchins -Needle Sharp Spines
+
+CuddleFish (Active "camoflauge" when hunting" )
+Zebra Mantis Shrimp 
+
+
+
+
+
+
+
+
+
+Develop 'Traits' System for Modeling/ Animation 
+    -i.e 'has Spiny tentacles', 'adaptive skin', etc. 
+    Model on percentages? Genomes? 
+
+
+
+Methods of ProCreation: 
+    -Spawning
+    -Mating 
+    -ASexual 

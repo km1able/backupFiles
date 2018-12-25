@@ -1,0 +1,44 @@
+## for managing hierarchies in code base 
+i.e 
+ 
+
+Object Hierarchy: 
+
+
+                            Object
+                                        Actor 
+
+
+
+
+
+Virtual Object: 
+
+    Class VertexManager/VertexIndexManager -> Static or MultiClass? 
+    VertexIndiceCounter: Static or Multi
+        StaticVertexIndexCounter
+        MultiVertexIndexCounter ---> for organization of different shading models, etc. 
+            (i.e. Trees/Foliage in one, Actors in another) 
+        
+        -Utilize Array/Dynamic Arrays or Similar Containers
+        
+        Methods: 
+            -Construct () 
+            -Construct (ArrayFill) 
+            -Add (VertexArray) 
+                -receive input array, generate Correlating Index Array 
+            -Reorganize() 
+
+    
+    ObjectManager(T ManageableObject) {
+        //used for 'Networkable' objects 
+        //i.e.: Say create a NetworkScanner/Sensor Object -> 
+            Sensors have variable inputs for detection of values 
+            (i.e. MotionDetected, MaxHeatTemp) -> 
+            Add objects to ObjectManger Pointer ID pool, 
+            call methods/pass messages to and from ObjectManager
+        T Vector<> ObjID
+
+        PassMessage(ObjID)
+        ReceiveMessage(ObjID) 
+    }

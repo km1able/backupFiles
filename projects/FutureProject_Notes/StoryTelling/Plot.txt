@@ -1,0 +1,18 @@
+Math, Ben, Sarah? 
+
+-Math: Central Protagonist --> Skilled, smart, tactical, fatally error-prone (fails in critical 
+                                situations? Past memories of failure? Cannot rely on himself? )
+ 
+ -Ben: Young, Adventurous, Foolhardy
+
+ -Sarah: Kind, Supportive, Cheeky?, Lives inside a fairy tale 
+            -Innate magic
+
+        
+Infrastructure: 
+    Pipes - easy to model, can easily determine: Bounding/Occlusion 
+                                                 Graphics Pipeline
+                                                 Arrays, General Mapping of Map 
+        S-Splines + Tangents/Normal for: 
+            Vertex Algorithm Production 
+            

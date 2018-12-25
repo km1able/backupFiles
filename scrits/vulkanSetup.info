@@ -1,0 +1,6 @@
+---execute vulkan setup scripts
+--download tar from vulkan site
+--extract to 'vulkan' directory 
+--execute 'source ~/vulkan/1.1.xx.y/setup-env.sh
+--execute 'setup_tools.sh' 
+--execute via to see if its working

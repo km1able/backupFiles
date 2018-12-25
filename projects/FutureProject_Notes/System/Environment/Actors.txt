@@ -1,0 +1,11 @@
+
+
+Static Actors (Geometry, Lights) 
+
+
+
+
+Dynamic Actors (Particles, Characters, Foliage, Chairs) 
+
+
+Virtual Actors (Controllers) 

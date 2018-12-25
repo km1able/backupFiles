@@ -1,0 +1,15 @@
+
+
+Main Kinds of Input: 
+    Mouse
+    Keyboard
+    Controller
+    Joystick
+
+Output: 
+    Graphics
+    Sounds
+    Information
+    Events/Messages
+
+    

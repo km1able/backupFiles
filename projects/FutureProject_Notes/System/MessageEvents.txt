@@ -1,0 +1,36 @@
+**General information regarding Message/Event Queues, Threads/Coroutines/Fibers
+    --> How is system structured? 
+    --> How are messages/callbacks defined? 
+
+
+Instance 1: 
+    Generate Hash Table of Callback Functions 
+        (i.e. PlaySound(ID), ProcessVectors(VectorArray, Transform)) 
+    Messages should have IDs
+    --> Push onto stack or tree for nodal filtering 
+    --> Based on ID, give to specific callback 
+        (i.e. if Message has ID of 1, then it is a SOUNDMSG0
+    --> Generate Individual ID as Well as Message Category
+            Individual ID identifies the element
+            Message Category ID identifies what callback to use
+
+    
+
+
+
+    Systems: 
+        Use fibers for blocking actions --> can be suspended and resumed (i.e. Character Actions) 
+            --> Generate Data Structure for passing between Threads 
+                --> I.E. Game Class with Required information 
+                    --> Generate Subset Data within Fibers, 
+                        --> Use Mutex for Locking/Unlocking Actions
+                        --> Generate Mutex at initial entry into program to limit creation time
+                        --> Also generate fibers at initial entry 
+                            --> i.e. Fiber Pool as well as threadpools? (Fiber Arrays for sequential processing) 
+                            --> Hash Fibers, Update at conclusion (i.e. Fiber is Free for Work? )
+        Locking/Unlocking happens on Different Threads? 
+        I.E. Main Thread has Game Class
+            --> Locks class for Data Processing in Another Thread
+            --> Sends signal/message to Other Thread
+            --> Fiber/Callback is received, scheduled, processed, and entered
+            --> Callback 

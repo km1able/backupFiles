@@ -1,0 +1,18 @@
+--> event queues / messaging broadcasat
+(from gameprogrammingpatterns.com)
+Register events/ messages for in game events ( i.e. monster dies) 
+--> use arrays with 'ring buffers' (head/tails, process through arrays) 
+-queues: 
+    -single cast
+        -all sender knows is it sent messages
+        -queues are more encapsulated
+        -decided whether registered listeners or only one get message
+    -broadcast 
+        - if ten event listeners are registered to the event, 
+            then all ten see the event
+    -work 
+        -multiple listeners 
+        -each item in queues only goes to one 
+            -common for parcelling jobs to pool of concurrent threads
+        -HAVE to schedule. 
+            -determine best choice for message recipient

@@ -1,0 +1,3 @@
+/home/kelly/projects/cpp/initial/CMakeFiles/rebuild_cache.dir
+/home/kelly/projects/cpp/initial/CMakeFiles/InitialProject.dir
+/home/kelly/projects/cpp/initial/CMakeFiles/edit_cache.dir

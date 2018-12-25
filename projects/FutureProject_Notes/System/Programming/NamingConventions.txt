@@ -1,0 +1,10 @@
+
+To Decide on naming conventions: 
+
+-Interfaces
+-Objects
+-Virtual Objects (?? Messages/Events...What else? ) 
+-Functions
+
+?? - Workers/Utilities 
+(i.e. Event Queues, Message Handlers, Object Factories)

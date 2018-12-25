@@ -1,0 +1,23 @@
+Configuring conduit-1.2.13.1...
+Preprocessing library for conduit-1.2.13.1..
+Building library for conduit-1.2.13.1..
+[1 of 8] Compiling Data.Conduit.Internal.Pipe ( Data/Conduit/Internal/Pipe.hs, .stack-work/dist/x86_64-linux/Cabal-2.2.0.1/build/Data/Conduit/Internal/Pipe.o )
+
+[;1mData/Conduit/Internal/Pipe.hs:593:12: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Not in scope: type constructor or class ‘MonadBaseControl’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m593 |[0m[0m catchP :: ([;1m[31mMonadBaseControl[0m[0m IO m, Exception e)
+[;1m[34m    |[0m[0m[;1m[31m            ^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData/Conduit/Internal/Pipe.hs:610:13: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Not in scope: type constructor or class ‘MonadBaseControl’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m610 |[0m[0m handleP :: ([;1m[31mMonadBaseControl[0m[0m IO m, Exception e)
+[;1m[34m    |[0m[0m[;1m[31m             ^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mData/Conduit/Internal/Pipe.hs:620:10: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m
+    Not in scope: type constructor or class ‘MonadBaseControl’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m620 |[0m[0m tryP :: ([;1m[31mMonadBaseControl[0m[0m IO m, Exception e)
+[;1m[34m    |[0m[0m[;1m[31m          ^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m

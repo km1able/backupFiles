@@ -1,0 +1,4 @@
+- interact with network (pull text at first, then use to gen objects from data list) 
+
+game mode/level tree: 
+- create nodes, put on tree --->  determine when levels are complete or when branches --> traverse tree 

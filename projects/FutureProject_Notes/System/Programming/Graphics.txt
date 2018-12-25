@@ -1,0 +1,28 @@
+**General information about graphics systems, i.e. rendering, algorithms, data structures **
+
+
+
+Algorithms: 
+
+
+
+
+
+Functions: 
+
+
+
+
+
+
+Vulkan/Main.cpp interop: 
+
+
+
+Vulkan: 
+-Descriptor Sets, Descriptor Pools
+Push Constants, (max 124 bytes of data) 
+Also Push Descriptors (Vulkan Tutorial): (don't neccessarily need descriptor pool or set) 
+    --> push up the same data packed into a VkWriteDescriptorSet vector you would have otherwise used to 
+        create the descriptor set via vkAllocateDescriptorSets and vkUpdateDescriptorSets
+    --> Also consider Per Object basis for Shaders/Sets

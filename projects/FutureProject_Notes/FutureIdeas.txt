@@ -1,0 +1,20 @@
+-2d tables/grids/boxes in 3d space 
+-camera can move
+-objects can be picked --> actionable upon 'clicked' event
+    =start with simple tasks (change color, change text) 
+
+-transition to models/animations --> within event queue
+
+i.e. define simple shape generator --> squares, triangles, circles
+    = place randomly, in patterns 
+    = create objects 
+    = update objects based on "isObjectClicked" 
+
+--> polymorphic structures ( shape descends to instance ( square, circle, triangle) 
+    = shapes have : position, color, size? (area, radius, algorithm for determination of isClicked) 
+    = i.e. shape: def (isClicked) 
+        --> descends into individual events
+
+--> main cursor should be in-game (i.e. first person iron sights) for easy path picking (camera point to object point) 
+    = objects should be able to rotate and be used for a 'shoot the target' kind of game/action
+    = mode for 2d menuing/pause menu (rectangle grid with mouse/cursor picking) s
